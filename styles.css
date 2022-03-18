@@ -1,0 +1,115 @@
+/*
+1. Posicionamiento
+2. Modelo caja
+3. Tipografia
+4. Visuales
+5. Otros
+*/
+
+:root {
+    /* fonts size */
+  --font-size-sans-small: 14px;
+  --font-size-sans-normal: 18px;
+  --font-size-sans-large: 24px;
+
+  --font-size-inter-small: 12px;
+  --font-size-inter-normal: 16px;
+
+  /* line height  */
+  --line-height-inter-small: 18px;
+  --line-height-inter-normal: 23px;
+  --line-height-inter-large: 26px;
+
+  /* --line-height-inter-small: 15px;
+  --line-height-inter-normal: 19px; */
+
+    /*degradado*/
+    --background:#E5E5E5;
+    --linear-gradient:207.8deg, #201E1C 16.69%, #F7931A 100%;
+    /*colores*/
+    --bitcoin-orange: #f7931A;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #201e1c;
+    --black: #282623;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+    
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+
+}
+header img {
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+}
+.header__title_container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+}
+.header__title_container h1 {
+    font-size: var(--font-size-sans-large); /*tamaño de fuente*/
+    font-weight: bold; /*fuente gordita*/
+    line-height: var(--line-height-inter-large);
+    color: var(--just-white);
+}
+.header__title_container p {
+    margin-top: 25px;
+    font-size: var(--font-size-inter-small);
+    font-weight: 500;
+    line-height: var(--line-height-inter-small);
+    color: var(--soft-orange);
+}
+.header__title_container .header__button {
+    position: absolute;
+    top: calc(100% - 24px);
+	left: calc(50% - 114.5px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /*sombra*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: var(--font-size-inter-small);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+.header__button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('./icons/down-arrow.svg');
+}
