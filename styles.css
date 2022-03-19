@@ -191,3 +191,68 @@ main {
     color: var(--grey);
     background-color: var(--just-white);
 }
+.currency__table-container .table__top-left {
+    border-radius: 15px 0 0 0;      
+}
+.currency__table-container .table__top-right {
+    border-radius: 0 15px 0 0;   
+}
+.currency__table-container .table__bottom-left {
+    border-radius: 0 0 0 15px;   
+}
+.currency__table-container .table__bottom-right{
+    border-radius: 0 0 15px 0;  
+}
+
+.currency__table-container .table__right{
+    font-size: var( --font-size-sans-small);
+    font-weight: normal;
+    line-height: var(--line-height-inter-small);
+    color: #757575;
+}
+.down, .up , .Bitcoin, .Ethereum, .Ripple, .Stellar {
+    display: inline-block;
+    width: 15px;
+    height: 15px;      
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.down {
+    background-image: url('./icons/trending-down.svg');
+    margin-left: 10px; 
+}
+.up {
+    background-image: url('./icons/trending-up.svg');
+    margin-left: 10px; 
+}
+.Bitcoin {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/991/991959.png');
+    margin-right: 10px;
+}
+.Ethereum {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/1346/1346683.png');
+    margin-right: 10px;
+}
+.Ripple {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/2586/2586206.png');
+    margin-right: 10px;
+}
+.Stellar {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/6426/6426056.png');
+    margin-right: 10px;
+}
+
+.currency__table-date {
+    width: 190px;
+    height: 30px;
+    margin: 15px auto 0;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+.currency__table-date p {
+    font-size: var(--font-size-inter-small);
+    line-height: 1.5rem;
+    color: var(--warm-black);
+}
