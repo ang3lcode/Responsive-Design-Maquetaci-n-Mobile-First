@@ -1,0 +1,114 @@
+:root {
+    /* fonts size */
+  --font-size-sans-small: 14px;
+  --font-size-sans-normal: 18px;
+  --font-size-sans-large: 24px;
+
+  --font-size-inter-small: 12px;
+  --font-size-inter-normal: 16px;
+
+  /* line height  */
+  --line-height-inter-small: 18px;
+  --line-height-inter-normal: 23px;
+  --line-height-inter-large: 26px;
+
+  /* --line-height-inter-small1: 15px;
+  --line-height-inter-normal1: 19px; */
+
+    /*degradado*/
+    --background:#E5E5E5;
+    --linear-gradient:207.8deg, #201E1C 16.69%, #F7931A 100%;
+    /*colores*/
+    --bitcoin-orange: #f7931A;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #201e1c;
+    --black: #282623;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+    
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+.main__table-container{
+    margin-top: 20px;
+}
+.main__table-container .main__grid-container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    background: #ffffff;
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+    color: #b5b0ac;
+
+}
+.main__table-container .main__table-title {
+    font-family: 'Dm Sans', sans-serif;
+    color: var(--secondary-blue);
+    font-weight: 700;
+    font-size: var(--font-size-sans-normal);
+    line-height: var(--line-height-inter-normal);
+    width: 60%;
+    margin: 0 auto 12px auto;
+    padding-left: 15px;
+    text-align: left;
+}
+.main__table-container .main__grid-container .main__grid-child {
+    border-bottom: 1px solid var(--off-white);
+    font-weight: 500;
+    font-size: var(--font-size-inter-normal);
+    line-height: var(--line-height-inter-small);
+    padding: 10px 12px;
+    text-align: left;  
+}
+.main__table-container .main__grid-container .value {
+    color: #757575;
+    font-weight: 400;
+    font-size: var(--font-size-sans-small);
+    line-height: var(--line-height-inter-small);
+    text-align: center;
+}
+.up,
+.down {
+    display: inline-block;
+    width: 13px;
+    height: 8px;    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
+.up {
+    background-image: url(./icons/trending-up.svg);
+}
+
+.down{    
+    background-image: url(./icons/trending-down.svg);
+} 
+
+.currency__table-date {
+    width: 190px;
+    height: 30px;
+    margin: 15px auto 0;
+    padding: 8px;
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+    
+}
+.currency__table-date .main__date {
+    font-size: var(--font-size-inter-small);
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    text-align: center;
+}
